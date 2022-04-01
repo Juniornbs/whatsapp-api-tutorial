@@ -51,6 +51,7 @@ const client = new Client({
 client.on('message', msg => {
   if (msg.body == '!ping') {
     msg.reply('pong');
+    console.log(msg)
   } else if (msg.body == 'good morning') {
     msg.reply('selamat pagi');
   } else if (msg.body == '!groups') {
